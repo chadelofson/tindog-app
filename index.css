@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    background: linear-gradient(180deg, #FFF 0%, #F6F7FB 100%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.125rem;
+}
+
+.profile-icon,
+.chat-icon {
+    width: 2.125rem;
+    height: 2.125rem;
+}
+
+.logo {
+    width: 5.25rem;
+    height: 2.625rem;
+}
+
+.profile {
+    max-width: 534px;
+    height: 750px;
+    border-radius: 15px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.90) -11.44%, rgba(0, 0, 0, 0.00) 39.97%), lightgray 50%;
+    background-size: cover;
+}
+
+.profile-header {
+    margin: 7px 0;
+}
+
+.profile-text {
+    color: #B7B7B7;
+    margin: 0;
+}
+
+.dog-img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-bio {
+    position: absolute;
+    left: .75rem;
+    bottom: 1.5rem;
+    text-align: center;
+}
+
+.badge {
+    width: 234px;
+    height: 116px;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 70px;
+    left: 5px;
+}
+
+.btn {
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(180deg, #FFF 0%, #F6F7FB 100%);
+    width: 91px;
+    height: 92px;
+    fill: #FFF;
+    filter: drop-shadow(0px 10px 20px #E9E9EA);
+}
+
+.btn-like:active,
+.btn-like:hover,
+.btn-like:focus {
+    fill: #DBFFF4;
+    background: #DBFFF4;
+    filter: drop-shadow(0px 10px 20px #CCF1E6);
+    cursor: pointer;
+}
+
+.btn-nope:active,
+.btn-nope:hover,
+.btn-nope:focus {
+    fill: #FFE7EF;
+    background: #FFE7EF;
+    filter: drop-shadow(0px 10px 20px #EDD9DF);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.125rem;
+}
